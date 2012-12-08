@@ -127,7 +127,8 @@
 	<div id="divPaused" class="dn">PAUSED</div>
 </body>
 <script type="text/javascript">
-	$('#body').keydown(function(e) {
+	$(function() {
+		$('#body').keydown(function(e) {
 		if ($('#hdnPaused').val() == '1') {
 			if (e.which == 27) {
 				$('#hdnPaused').val('0');
@@ -136,5 +137,8 @@
 			}
 		}
 	});
+alert('did it');
+	});
+	
 </script>
 </html>

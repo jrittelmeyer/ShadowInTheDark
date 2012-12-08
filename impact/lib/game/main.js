@@ -63,6 +63,7 @@ ig.ShadowInARoom = ig.Game.extend({
 // Start the Game with 60fps, a resolution of 320x240, scaled
 // up by a factor of 2
 ig.main( '#canvas', ig.ShadowInARoom, 60, 320, 240, 1);
+alert('did it');
 
 var scale;
 if (ig.ua.viewport.height < 300) scale = 1;
